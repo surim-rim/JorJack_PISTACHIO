@@ -2,6 +2,12 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+
+VR/Library/**
+VR/Assets/we/02.Map/Snowmap/PJH_Map/Map/TerrainDemoScene_URP/Terrain/Textures/Cliff_Mossy_E/Cliff_Mossy_E_BaseColor.tif
+VR/Assets/we/02.Map/Snowmap/PJH_Map/Map/TerrainDemoScene_URP/Terrain/Textures/Cliff_Mossy_E/Cliff_Mossy_E_MaskMap.tif
+VR/Assets/we/02.Map/Snowmap/PJH_Map/Map/TerrainDemoScene_URP/Terrain/Textures/Cliff_Mossy_E/Cliff_Mossy_E_Normal.tif
+
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/

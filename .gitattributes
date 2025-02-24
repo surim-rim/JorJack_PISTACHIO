@@ -3,3 +3,8 @@
 *.wav filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.unity filter=lfs diff=lfs merge=lfs -text
+VR/*.fbx filter=lfs diff=lfs merge=lfs -text
+VR/Assets/Oculus/LipSync/Plugins/MacOSX/OVRLipSync.bundle filter=lfs diff=lfs merge=lfs -text
+VR/Assets/Oculus/LipSync/Plugins/iOS/libOVRLipSync.dylib filter=lfs diff=lfs merge=lfs -text
+VR/Assets/we/02.Map/Snowmap/NatureManufacture[[:space:]]Assets/Dynamic[[:space:]]Nature[[:space:]]-[[:space:]]Mountain[[:space:]]Tree[[:space:]]Pack/Models/Textures/T_Fir_leaves_BC_T.TGA filter=lfs diff=lfs merge=lfs -text
+VR/Assets/we/02.Map/Snowmap/NatureManufacture[[:space:]]Assets/Dynamic[[:space:]]Nature[[:space:]]-[[:space:]]Mountain[[:space:]]Tree[[:space:]]Pack/Models/Textures/T_Fir_leaves_MT_AO_G.tga filter=lfs diff=lfs merge=lfs -text
