@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Hands_solid
   m_Shader: {fileID: 4800000, guid: 8d2bb70cbf9db8d4da26e15b26e74248, type: 3}
-  m_Parent: {fileID: 2100000, guid: 9df22fe5a0a42c546bc727b0ca8f63b9, type: 2}
+  m_Parent: {fileID: 2100000, guid: 749ea283fb38ed7418f74534e736e14c, type: 2}
   m_ModifiedSerializedProperties: 2
   m_ValidKeywords:
   - _EMISSION
