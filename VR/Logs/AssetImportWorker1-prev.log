@@ -1,0 +1,873 @@
+Using pre-set license
+Built from '2022.3/release' branch; Version is '2022.3.12f1 (4fe6e059c7ef) revision 5236448'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'ko' Physical Memory: 32609 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/GitHub_JorJack/VR
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+2363
+Successfully changed project path to: C:/GitHub_JorJack/VR
+C:/GitHub_JorJack/VR
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8992] Host "[IP] 192.168.219.102 [Port] 0 [Flags] 2 [Guid] 1756910714 [EditorId] 1756910714 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-382ULNV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8992] Host "[IP] 192.168.219.102 [Port] 0 [Flags] 2 [Guid] 1756910714 [EditorId] 1756910714 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-382ULNV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 24.93 ms, found 12 plugins.
+Preloading 2 native plugins for Editor in 1.86 ms.
+Initialize engine version: 2022.3.12f1 (4fe6e059c7ef)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/GitHub_JorJack/VR/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti (ID=0x2482)
+    Vendor:   NVIDIA
+    VRAM:     8018 MB
+    Driver:   32.0.15.7216
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005585 seconds.
+- Loaded All Assemblies, in  0.292 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 200 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.468 seconds
+Domain Reload Profiling: 759ms
+	BeginReloadAssembly (86ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (119ms)
+		LoadAssemblies (85ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (118ms)
+			TypeCache.Refresh (116ms)
+				TypeCache.ScanAssembly (104ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (468ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (420ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (298ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (76ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Assembly 'Assets/we/02.Map/Tutorial_map/DB/ExternalDependencyManager/Editor/1.2.183/Google.IOSResolver.dll' will not be loaded due to errors:
+Unable to resolve reference 'UnityEditor.iOS.Extensions.Xcode'. Is the assembly missing or incompatible with the current platform?
+Reference validation can be disabled in the Plugin Inspector.
+Assembly 'Assets/we/02.Map/Tutorial_map/DB/Firebase/Editor/Firebase.Editor.dll' will not be loaded due to errors:
+Unable to resolve reference 'UnityEditor.iOS.Extensions.Xcode'. Is the assembly missing or incompatible with the current platform?
+Reference validation can be disabled in the Plugin Inspector.
+- Loaded All Assemblies, in  0.759 seconds
+Refreshing native plugins compatible for Editor in 13.17 ms, found 12 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+[XR] OVRP version 1.89.1
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.888 seconds
+Domain Reload Profiling: 1644ms
+	BeginReloadAssembly (125ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (559ms)
+		LoadAssemblies (345ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (282ms)
+			TypeCache.Refresh (222ms)
+				TypeCache.ScanAssembly (203ms)
+			ScanForSourceGeneratedMonoScriptInfo (40ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (889ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (673ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (117ms)
+			ProcessInitializeOnLoadAttributes (454ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 167.57 ms, found 12 plugins.
+Preloading 2 native plugins for Editor in 0.13 ms.
+Unloading 9177 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 159 unused Assets / (2.6 MB). Loaded Objects now: 9597.
+Memory consumption went from 359.1 MB to 356.5 MB.
+Total: 11.868100 ms (FindLiveObjects: 0.696800 ms CreateObjectMapping: 3.771600 ms MarkObjects: 6.057000 ms  DeleteObjects: 1.341000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1733.832246 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/Locomotion/Prefabs/BridgePlatformPf.prefab
+  artifactKey: Guid(d68710cb68b234fcdadef3ef873cd5c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/Locomotion/Prefabs/BridgePlatformPf.prefab using Guid(d68710cb68b234fcdadef3ef873cd5c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af3392628b5bea2eca19b7e7bc4308bd') in 0.313702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Mobile/SM_AFS_Log23_Mobile.fbx
+  artifactKey: Guid(3319dbe83a2680745a74759c09cd6d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Mobile/SM_AFS_Log23_Mobile.fbx using Guid(3319dbe83a2680745a74759c09cd6d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1145162a3d9e5dd7c85d340bc9fbb148') in 0.046346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Cinematic/SM_AFS_Log28_Cinematic.prefab
+  artifactKey: Guid(597325a94f6b4a04e982715bb4e5e43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Cinematic/SM_AFS_Log28_Cinematic.prefab using Guid(597325a94f6b4a04e982715bb4e5e43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95366651fbb40536170cd7960b701118') in 0.459646 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/HighEndPC/SM_AFS_Log23_HighEndPC.fbx
+  artifactKey: Guid(0abbeff7151b8eb4f92543fba91cf308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/HighEndPC/SM_AFS_Log23_HighEndPC.fbx using Guid(0abbeff7151b8eb4f92543fba91cf308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e93f8d4a059bbe06f30dd2f4080c0c5c') in 0.020881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Cinematic/SM_AFS_Log24_Cinematic.FBX
+  artifactKey: Guid(0f3f2fc7728848e4ba524865dd38c679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Cinematic/SM_AFS_Log24_Cinematic.FBX using Guid(0f3f2fc7728848e4ba524865dd38c679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87377652bb1768f04318e878891d798a') in 0.020337 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/SceneManager/Prefabs/GenericPrefabs/Ceiling.prefab
+  artifactKey: Guid(368d4f7d01c25574dba39c389b785c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/SceneManager/Prefabs/GenericPrefabs/Ceiling.prefab using Guid(368d4f7d01c25574dba39c389b785c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21313c1c875cb8d50a056aa31c085a07') in 0.087541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/LowEndPC/SM_AFS_Log23_LowEndPC.fbx
+  artifactKey: Guid(c354f1b262d7e5c4b81f61b32b2d732d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/LowEndPC/SM_AFS_Log23_LowEndPC.fbx using Guid(c354f1b262d7e5c4b81f61b32b2d732d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '708a06767bf9802568c656a1b5804c18') in 0.020857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/VR/SM_AFS_Log25_VR.prefab
+  artifactKey: Guid(445f68b2d68ea254a9a049ddcb802a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/VR/SM_AFS_Log25_VR.prefab using Guid(445f68b2d68ea254a9a049ddcb802a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18d135ff12a1e86b2e8e357059d4871') in 0.023729 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/HighEndPC/SM_AFS_Log24_HighEndPC.fbx
+  artifactKey: Guid(f2803cba27a33f34ea77125f1a62b466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/HighEndPC/SM_AFS_Log24_HighEndPC.fbx using Guid(f2803cba27a33f34ea77125f1a62b466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d0c38ace837ba8985d063c9be250342') in 0.022312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/HighEndPC/SM_AFS_Log24_HighEndPC.prefab
+  artifactKey: Guid(a9dda9b0ed0ccd343b5f757edf482f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/HighEndPC/SM_AFS_Log24_HighEndPC.prefab using Guid(a9dda9b0ed0ccd343b5f757edf482f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c2435e7696b5c688d88a630fe258a7c') in 0.025069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Climb/Climb Sample.prefab
+  artifactKey: Guid(2ea572d587ee60f44bd5baa3bc2d6503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Climb/Climb Sample.prefab using Guid(2ea572d587ee60f44bd5baa3bc2d6503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7287db3c4ec34a40f75d6d5c6b7cbd57') in 0.073533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1090
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/VR/SM_AFS_Log26_VR.prefab
+  artifactKey: Guid(d2b1feff4bc97b743828013e78d5787c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/VR/SM_AFS_Log26_VR.prefab using Guid(d2b1feff4bc97b743828013e78d5787c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c14e0465210b8258e491a4fc9a9630af') in 0.023715 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/LowEndPC/SM_AFS_Log24_LowEndPC.prefab
+  artifactKey: Guid(5914f7318f977dd4c9b387f20be7b574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/LowEndPC/SM_AFS_Log24_LowEndPC.prefab using Guid(5914f7318f977dd4c9b387f20be7b574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e24804ca17addc55892f75d78a3240f') in 0.024281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Mobile/SM_AFS_Log23_Mobile.prefab
+  artifactKey: Guid(bd80b09e397e67f44b67d20f1ec5e58b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Mobile/SM_AFS_Log23_Mobile.prefab using Guid(bd80b09e397e67f44b67d20f1ec5e58b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7044948c8a4fa1ab885bd3b14695b822') in 0.020589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/Locomotion/Prefabs/CeilingWedgesPf.prefab
+  artifactKey: Guid(7c69d9ce39cad438e91794f1c0f27778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/Locomotion/Prefabs/CeilingWedgesPf.prefab using Guid(7c69d9ce39cad438e91794f1c0f27778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b101696687767d6d54c85b916c41b5') in 0.094420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Mobile/SM_AFS_Log25_Mobile.fbx
+  artifactKey: Guid(e421fbad03031b4468eab34090529e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Mobile/SM_AFS_Log25_Mobile.fbx using Guid(e421fbad03031b4468eab34090529e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7a83d17dd8208adccfdaddc843cd36c') in 0.023116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Oculus/Interaction/Samples/Objects/Props/ChessPiece/Materials/ChessPieceMaterial.fbx
+  artifactKey: Guid(817c954a31a114577b56080dd5ca87c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Objects/Props/ChessPiece/Materials/ChessPieceMaterial.fbx using Guid(817c954a31a114577b56080dd5ca87c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b86f4d7acdf773da72158b1eb086bdc') in 0.112420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/LowEndPC/SM_AFS_Log27_LowEndPC.fbx
+  artifactKey: Guid(88dfa28c63741604c8b98542338f7572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/LowEndPC/SM_AFS_Log27_LowEndPC.fbx using Guid(88dfa28c63741604c8b98542338f7572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef9f409c727bdfd36f034077853a3a4') in 0.020058 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/VR/SM_AFS_Log26_VR.fbx
+  artifactKey: Guid(a2cd430b3cf478645bd1fb1e12e5048c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/VR/SM_AFS_Log26_VR.fbx using Guid(a2cd430b3cf478645bd1fb1e12e5048c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65dd7eeddda67dfdee392b9df0aa3ffd') in 0.020991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Mobile/SM_AFS_Log24_Mobile.fbx
+  artifactKey: Guid(24bafe57334a1104d944a7a1c855c3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Mobile/SM_AFS_Log24_Mobile.fbx using Guid(24bafe57334a1104d944a7a1c855c3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d1211f6e8e667af8f787b5fb78ec813') in 0.019522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Mobile/SM_AFS_Log24_Mobile.prefab
+  artifactKey: Guid(5879c79133ea16342908890fb33873aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Mobile/SM_AFS_Log24_Mobile.prefab using Guid(5879c79133ea16342908890fb33873aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c38c19280ad71a3245da509452063f4') in 0.019343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/LowEndPC/SM_AFS_Log25_LowEndPC.prefab
+  artifactKey: Guid(89eeaa251ecc9494bb07e1e4bb98d498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/LowEndPC/SM_AFS_Log25_LowEndPC.prefab using Guid(89eeaa251ecc9494bb07e1e4bb98d498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '436db3926eb757d92e5d2f2d661dde82') in 0.025604 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/VR/SM_AFS_Log23_VR.fbx
+  artifactKey: Guid(8ad3cb4225b6f6b46a3af3a2141656a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/VR/SM_AFS_Log23_VR.fbx using Guid(8ad3cb4225b6f6b46a3af3a2141656a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6390093036b367decae91c8d2ef85027') in 0.019330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/VR/SM_AFS_Log27_VR.prefab
+  artifactKey: Guid(5e6a0b0047d4f9545a568a44c5b1e27b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/VR/SM_AFS_Log27_VR.prefab using Guid(5e6a0b0047d4f9545a568a44c5b1e27b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '144a31135bcd9b158f7be8a1009cbce8') in 0.026483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/VR/SM_AFS_Log24_VR.fbx
+  artifactKey: Guid(e8a036a2aa8218b4fa865393907009ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/VR/SM_AFS_Log24_VR.fbx using Guid(e8a036a2aa8218b4fa865393907009ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c50ba953debe5acb6d611afd2c5ef7') in 0.019292 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Oculus/Interaction/Samples/Objects/Props/ChessPiece/ChessPiece.prefab
+  artifactKey: Guid(5b2febef9538fb34e972bb0070c107a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Objects/Props/ChessPiece/ChessPiece.prefab using Guid(5b2febef9538fb34e972bb0070c107a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a800c432ad7b56bf07a3481b0b92c2be') in 0.053721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 57
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Cinematic/SM_AFS_Log26_Cinematic.FBX
+  artifactKey: Guid(bd05b7a97748d11429571603508d2670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Cinematic/SM_AFS_Log26_Cinematic.FBX using Guid(bd05b7a97748d11429571603508d2670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b0d6abffe5b1cf1730911724388ff81') in 0.020657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/LowEndPC/SM_AFS_Log26_LowEndPC.prefab
+  artifactKey: Guid(cf460fa594b3ba54bac1892ba295df19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/LowEndPC/SM_AFS_Log26_LowEndPC.prefab using Guid(cf460fa594b3ba54bac1892ba295df19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f249a1f8dbf0bb040adccba4b294e1c3') in 0.024464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/HighEndPC/SM_AFS_Log26_HighEndPC.fbx
+  artifactKey: Guid(e918022e621611b4c9ac59849426ee43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/HighEndPC/SM_AFS_Log26_HighEndPC.fbx using Guid(e918022e621611b4c9ac59849426ee43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73ea19ccfd5eaf301c3efbba46ed0537') in 0.018530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.749385 seconds.
+  path: Assets/Oculus/VR/Meshes/MetaQuestTouchPlus/MetaQuestTouchPlus_Right.fbx
+  artifactKey: Guid(deed68a7fd2e9234899298cf80fae7ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Meshes/MetaQuestTouchPlus/MetaQuestTouchPlus_Right.fbx using Guid(deed68a7fd2e9234899298cf80fae7ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb650a716fde249a28e71eafc2beddae') in 0.210835 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 56
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Prefabs/ObjectPhysicsImpactSoft.prefab
+  artifactKey: Guid(bdb40a95c243fcc429e6ff8bfeddcfb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Prefabs/ObjectPhysicsImpactSoft.prefab using Guid(bdb40a95c243fcc429e6ff8bfeddcfb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '164a6395cdf6705ebd20763c82c5b6d0') in 0.102332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Oculus/VR/Meshes/OculusTouchForQuest2/OculusTouchForQuest2_Left.fbx
+  artifactKey: Guid(8b83018900d13bb4f8e0ad895cb004e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Meshes/OculusTouchForQuest2/OculusTouchForQuest2_Left.fbx using Guid(8b83018900d13bb4f8e0ad895cb004e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1605280d8508693457a4240025b6b28d') in 0.060756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 50
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/UI/ModalSingleButton.prefab
+  artifactKey: Guid(c24a7635b5761984d81cf6c4aac26e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/UI/ModalSingleButton.prefab using Guid(c24a7635b5761984d81cf6c4aac26e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '051661cdf2d8a4d7699c039a664d4ea1') in 0.031024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Prefabs/ObjectResizeDownAudio.prefab
+  artifactKey: Guid(5e5f065a0da50174f930fd138f3751ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Prefabs/ObjectResizeDownAudio.prefab using Guid(5e5f065a0da50174f930fd138f3751ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c15357f0e96fc236e9f41e8527485d8') in 0.010367 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Prefabs/ObjectResizeUpAudio.prefab
+  artifactKey: Guid(e35c14d64fd3af744baab6342ffa5d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Prefabs/ObjectResizeUpAudio.prefab using Guid(e35c14d64fd3af744baab6342ffa5d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d8a732a3472645e21f09ca40ad1eeb') in 0.003033 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Prefabs/ObjectPhysicsImpactHard.prefab
+  artifactKey: Guid(587a377cccd931246a8bc5bf692429c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Prefabs/ObjectPhysicsImpactHard.prefab using Guid(587a377cccd931246a8bc5bf692429c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95a95f170eb5c6fa1edf99350b98c19e') in 0.004112 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/OculusTouchForQuestAndRiftS_Left.fbx
+  artifactKey: Guid(32fbc8bcebb64584da5868aeeb086cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/OculusTouchForQuestAndRiftS_Left.fbx using Guid(32fbc8bcebb64584da5868aeeb086cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a887f526064fe6e7f2644b8557bb92f') in 0.051842 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Oculus/VR/Meshes/HandTracking/OculusHand_R.fbx
+  artifactKey: Guid(88e2e1bfe11ec6c438b0ade27eaeded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Meshes/HandTracking/OculusHand_R.fbx using Guid(88e2e1bfe11ec6c438b0ade27eaeded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc7629486362694d93fd6f816ed21000') in 0.057265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 168
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Oculus/Interaction/Runtime/Meshes/OculusHandPinchArrowBlended.fbx
+  artifactKey: Guid(dca3d72ce32048e409eaaf754210cfe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Runtime/Meshes/OculusHandPinchArrowBlended.fbx using Guid(dca3d72ce32048e409eaaf754210cfe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b56b0625b4d7190c1a9fa0c1b7f684f1') in 0.027738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Oculus/Interaction/Samples/Objects/Props/Mug/Materials/mugMaterial.fbx
+  artifactKey: Guid(3d497e3a0ce074b3cb67c627fe6e1cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Objects/Props/Mug/Materials/mugMaterial.fbx using Guid(3d497e3a0ce074b3cb67c627fe6e1cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '446de714f571a690595a3257a4df75b8') in 0.050792 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Oculus/VR/Meshes/HandTracking/OculusHand_L.fbx
+  artifactKey: Guid(442d5b4503ed83c4897ef44659446587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Meshes/HandTracking/OculusHand_L.fbx using Guid(442d5b4503ed83c4897ef44659446587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '668e3e0fd64538d690d05b83ec690f0a') in 0.035657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 168
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Oculus/Interaction/Samples/Objects/Props/Mug/Mug.prefab
+  artifactKey: Guid(25c090698b1b94e4d9a8f6d5494bdf31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Objects/Props/Mug/Mug.prefab using Guid(25c090698b1b94e4d9a8f6d5494bdf31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2963dec19ec6d8415ed898f6380000a3') in 0.142409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 148
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Oculus/Interaction/Samples/Objects/Environment/MRDesk/Models/MRDesk.fbx
+  artifactKey: Guid(c52c4e4029c7cc547a033db8b08dd4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Objects/Environment/MRDesk/Models/MRDesk.fbx using Guid(c52c4e4029c7cc547a033db8b08dd4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8cc0e06baf8ee009767960d5d08d0d3') in 0.026692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Oculus/VR/Meshes/MetaQuestTouchPro/MetaQuestTouchPro_Right.fbx
+  artifactKey: Guid(c933168a9a0f1e04bb793786b96e2f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Meshes/MetaQuestTouchPro/MetaQuestTouchPro_Right.fbx using Guid(c933168a9a0f1e04bb793786b96e2f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71d649b82d5b5eaf7b5b16698912b165') in 0.153943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 59
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Oculus/Interaction/Samples/Prefabs/OculusInteractionSamplesButtonMenu.prefab
+  artifactKey: Guid(9fa307f5b777a3144a94cb355e43bf43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Prefabs/OculusInteractionSamplesButtonMenu.prefab using Guid(9fa307f5b777a3144a94cb355e43bf43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c9d47003dabd7444033b7baaddbbafb') in 0.100315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 639
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Oculus/Interaction/Samples/Materials/Moon.fbx
+  artifactKey: Guid(c248512dc5f8d7546ae41e52308e4b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Materials/Moon.fbx using Guid(c248512dc5f8d7546ae41e52308e4b20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf2b13b09973fddc56873fbc46c6e1e8') in 0.037450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Oculus/Interaction/Samples/Objects/Props/Mug/Models/mugMeshConvexHulls.fbx
+  artifactKey: Guid(3acf8e63bb5a41040a058efda523d4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Objects/Props/Mug/Models/mugMeshConvexHulls.fbx using Guid(3acf8e63bb5a41040a058efda523d4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '606ced17aae6c6059f4cecbd719e380a') in 0.127687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 70
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/Passthrough/Prefabs/OculusLogo.fbx
+  artifactKey: Guid(b2ff3fe2d8faa954bb86008c932356d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/Passthrough/Prefabs/OculusLogo.fbx using Guid(b2ff3fe2d8faa954bb86008c932356d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41678f40b9be1bb20b35ccccd8275129') in 0.026103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Prefabs/ObjectReappearAudio.prefab
+  artifactKey: Guid(a067db1b6411ce944a12ad8815474543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Prefabs/ObjectReappearAudio.prefab using Guid(a067db1b6411ce944a12ad8815474543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '421450c44e0d0fbdd032a61dee764561') in 0.012249 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.989263 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Cinematic/SM_AFS_Log01_Cinematic.FBX
+  artifactKey: Guid(038ba0524df07f944893309c72d338d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Cinematic/SM_AFS_Log01_Cinematic.FBX using Guid(038ba0524df07f944893309c72d338d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '787a7924c2946bc6d17ecea2ca90a63d') in 0.021846 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/LowEndPC/SM_AFS_Log01_LowEndPC.fbx
+  artifactKey: Guid(1f4d0176425242a46b69bb4925f60ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/LowEndPC/SM_AFS_Log01_LowEndPC.fbx using Guid(1f4d0176425242a46b69bb4925f60ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99166db207df249001513787c36973af') in 0.021622 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/LowEndPC/SM_AFS_Log02_LowEndPC.prefab
+  artifactKey: Guid(8b868ad72a7d3534281655760bfe81f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/LowEndPC/SM_AFS_Log02_LowEndPC.prefab using Guid(8b868ad72a7d3534281655760bfe81f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02babcac9d9064dc2f3eb9c655bb41b3') in 0.037675 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/VR/SM_AFS_Log01_VR.prefab
+  artifactKey: Guid(1512c77629e99064b8e939f8ad53f098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/VR/SM_AFS_Log01_VR.prefab using Guid(1512c77629e99064b8e939f8ad53f098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66f60522415a2158256f30191fa1e0b9') in 0.032866 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/HighEndPC/SM_AFS_Log03_HighEndPC.fbx
+  artifactKey: Guid(847f427b0631b504fb257fc57a1f8698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/HighEndPC/SM_AFS_Log03_HighEndPC.fbx using Guid(847f427b0631b504fb257fc57a1f8698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216d46612cc347a04cced6220290b5a9') in 0.025779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/VR/SM_AFS_Log01_VR.fbx
+  artifactKey: Guid(bee91b7dad7f4c940969b90c42d6b638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/VR/SM_AFS_Log01_VR.fbx using Guid(bee91b7dad7f4c940969b90c42d6b638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7585f6f2b78326fe1ce2c84f3f39b6dd') in 0.022057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Cinematic/SM_AFS_Log02_Cinematic.prefab
+  artifactKey: Guid(7175d8f5968cf6748a0071b99f4cba85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Cinematic/SM_AFS_Log02_Cinematic.prefab using Guid(7175d8f5968cf6748a0071b99f4cba85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e9a9c905587ba0700124e0aa0bb8e8') in 0.029984 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/LowEndPC/SM_AFS_Log03_LowEndPC.fbx
+  artifactKey: Guid(7a5a39f0e31c63942bd6b3ea424498e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/LowEndPC/SM_AFS_Log03_LowEndPC.fbx using Guid(7a5a39f0e31c63942bd6b3ea424498e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4c23c74bf5f6d7111e8cc1486e425a6') in 0.028717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Mobile/SM_AFS_Log02_Mobile.prefab
+  artifactKey: Guid(f8efb17850aa0c44b92028546f44fb5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Mobile/SM_AFS_Log02_Mobile.prefab using Guid(f8efb17850aa0c44b92028546f44fb5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f63b4f294f76ca24a1e5eb1e1d52813e') in 0.028932 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Cinematic/SM_AFS_Log02_Cinematic.FBX
+  artifactKey: Guid(a470fffc9d87b224a9baddba129ed767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Cinematic/SM_AFS_Log02_Cinematic.FBX using Guid(a470fffc9d87b224a9baddba129ed767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c31bb7a0b0e98dcf9a41b836306beb65') in 0.028945 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Mobile/SM_AFS_Log01_Mobile.prefab
+  artifactKey: Guid(6d52264ad66a0c04190644a7634dd290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Mobile/SM_AFS_Log01_Mobile.prefab using Guid(6d52264ad66a0c04190644a7634dd290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ceb39c3c8173d2b48ceb321ac14b48f') in 0.028684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/HighEndPC/SM_AFS_Log02_HighEndPC.fbx
+  artifactKey: Guid(c796f952ccfedd648bd4254b133e87b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/HighEndPC/SM_AFS_Log02_HighEndPC.fbx using Guid(c796f952ccfedd648bd4254b133e87b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4158d3537c9e2dac3ef82f382790b45') in 0.032652 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Cinematic/SM_AFS_Log03_Cinematic.FBX
+  artifactKey: Guid(9befd7cfbbe57014cadf8f6062bd062e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Cinematic/SM_AFS_Log03_Cinematic.FBX using Guid(9befd7cfbbe57014cadf8f6062bd062e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88d72de5c6c4112bbca01bb6f26efcbb') in 0.030122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Mobile/SM_AFS_Log02_Mobile.fbx
+  artifactKey: Guid(a12d0c2f6c163ca43b49539b58a42397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Mobile/SM_AFS_Log02_Mobile.fbx using Guid(a12d0c2f6c163ca43b49539b58a42397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d23fdc7cb7d99ef1b87527aacd084b') in 0.023613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 5.081773 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/VR/SM_AFS_Log03_VR.prefab
+  artifactKey: Guid(964f83c2ca99bbc4ba29dc0ce48a626e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/VR/SM_AFS_Log03_VR.prefab using Guid(964f83c2ca99bbc4ba29dc0ce48a626e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2298f863d6242e70ab76f59183a4a6d7') in 0.025999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 7.498753 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/HighEndPC/SM_AFS_Log10_HighEndPC.prefab
+  artifactKey: Guid(b1e64ef1de7cf494cb424d02473f4df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/HighEndPC/SM_AFS_Log10_HighEndPC.prefab using Guid(b1e64ef1de7cf494cb424d02473f4df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00841b52bb0b6e82a650441dca253743') in 0.029185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Cinematic/SM_AFS_Log11_Cinematic.FBX
+  artifactKey: Guid(d505717e3f8db7745bcf77e7ce2555f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Cinematic/SM_AFS_Log11_Cinematic.FBX using Guid(d505717e3f8db7745bcf77e7ce2555f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dfecfa1501a21e17662c0f8394cbf2d') in 0.020103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Cinematic/SM_AFS_Log12_Cinematic.prefab
+  artifactKey: Guid(feff8462a4320ac4d8310ed9a97bdd7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Cinematic/SM_AFS_Log12_Cinematic.prefab using Guid(feff8462a4320ac4d8310ed9a97bdd7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9d720edf8dfa2a9c6bc000cf25d315f') in 0.027554 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Cinematic/SM_AFS_Log11_Cinematic.prefab
+  artifactKey: Guid(80f1356322d04c14592d2a79ff12b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Cinematic/SM_AFS_Log11_Cinematic.prefab using Guid(80f1356322d04c14592d2a79ff12b6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a421a5fdf221618be24c9365bde88f7') in 0.029218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/VR/SM_AFS_Log10_VR.fbx
+  artifactKey: Guid(9286ae950377fd144bca3c731d4c3295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/VR/SM_AFS_Log10_VR.fbx using Guid(9286ae950377fd144bca3c731d4c3295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2871c5def345bfab50f8cb08b514fcc3') in 0.020105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/LowEndPC/SM_AFS_Log11_LowEndPC.fbx
+  artifactKey: Guid(cd24aa58185cd0b48aa93a46f3e3cc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/LowEndPC/SM_AFS_Log11_LowEndPC.fbx using Guid(cd24aa58185cd0b48aa93a46f3e3cc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5996bdb24ad6239036adf84296ffa2e8') in 0.020311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Mobile/SM_AFS_Log12_Mobile.prefab
+  artifactKey: Guid(9d54d5d5d71523a4885d538f3f158dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Mobile/SM_AFS_Log12_Mobile.prefab using Guid(9d54d5d5d71523a4885d538f3f158dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '317abc35688f26d843dd1501e16bb443') in 0.023590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Mobile/SM_AFS_Log11_Mobile.prefab
+  artifactKey: Guid(bef4e988dbc136c448dbab62f05c3bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Mobile/SM_AFS_Log11_Mobile.prefab using Guid(bef4e988dbc136c448dbab62f05c3bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea572a817389bf1f24dd7b8ff47b24d') in 0.020016 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/HighEndPC/SM_AFS_Log11_HighEndPC.prefab
+  artifactKey: Guid(837beeb3e7a4a72418c8c0e6e2ea7afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/HighEndPC/SM_AFS_Log11_HighEndPC.prefab using Guid(837beeb3e7a4a72418c8c0e6e2ea7afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc3f9d055d7e5a52ddc42e6ad6ae049d') in 0.020423 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/VR/SM_AFS_Log11_VR.fbx
+  artifactKey: Guid(0c5934e10b4023f40953d931c56f51c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/VR/SM_AFS_Log11_VR.fbx using Guid(0c5934e10b4023f40953d931c56f51c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee21383e9eb3afef8b7be2c65d94ffc') in 0.021001 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/LowEndPC/SM_AFS_Log11_LowEndPC.prefab
+  artifactKey: Guid(e3f66e6d558ca5e4abec6c3b431dc923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/LowEndPC/SM_AFS_Log11_LowEndPC.prefab using Guid(e3f66e6d558ca5e4abec6c3b431dc923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b0383dd42eb28e2a53f28a090f741c') in 0.029838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Mobile/SM_AFS_Log15_Mobile.fbx
+  artifactKey: Guid(006010a631a3cb943bd96c04c41d58f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/Mobile/SM_AFS_Log15_Mobile.fbx using Guid(006010a631a3cb943bd96c04c41d58f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7cbbbf221db8d835255c97a62c6b7ad') in 0.018997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/HighEndPC/SM_AFS_Log15_HighEndPC.prefab
+  artifactKey: Guid(2c700d0b9ba06e74ead91628d3d8395c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/HighEndPC/SM_AFS_Log15_HighEndPC.prefab using Guid(2c700d0b9ba06e74ead91628d3d8395c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d4bb2513cf70aeec159f3f9409b047') in 0.022119 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/LowEndPC/SM_AFS_Log15_LowEndPC.prefab
+  artifactKey: Guid(55808a7b1df0fb44bb57c9a7e113f71d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/LowEndPC/SM_AFS_Log15_LowEndPC.prefab using Guid(55808a7b1df0fb44bb57c9a7e113f71d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8a780746537127c67510bb31fa70dd7') in 0.025728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/LowEndPC/SM_AFS_Log15_LowEndPC.fbx
+  artifactKey: Guid(eba41c8d3eff220428c658f9e865b369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/LowEndPC/SM_AFS_Log15_LowEndPC.fbx using Guid(eba41c8d3eff220428c658f9e865b369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26096bfe5e991f07916adafd5be8d18c') in 0.020265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.217559 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/HighEndPC/SM_AFS_Log16_HighEndPC.fbx
+  artifactKey: Guid(f434891fd72e4854f95d26332f6a094d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/HighEndPC/SM_AFS_Log16_HighEndPC.fbx using Guid(f434891fd72e4854f95d26332f6a094d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2550041805ee02f8c115113a1f59ce17') in 0.027370 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Mobile/SM_AFS_Log16_Mobile.prefab
+  artifactKey: Guid(97b118c4acc80de489865c6d11ee4f62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/Mobile/SM_AFS_Log16_Mobile.prefab using Guid(97b118c4acc80de489865c6d11ee4f62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26681625f36ecbdbdc9cf576ef3564e') in 0.021910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/VR/SM_AFS_Log16_VR.prefab
+  artifactKey: Guid(e3b5be001bdd79f40b4fe099a93d4dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Prefabs/VR/SM_AFS_Log16_VR.prefab using Guid(e3b5be001bdd79f40b4fe099a93d4dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23f306ece2ace1ef8c82ef949a02588d') in 0.024450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/LowEndPC/SM_AFS_Log16_LowEndPC.fbx
+  artifactKey: Guid(f715686d28971e545a646365bf31322e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/we/04.Models/FireWoods/FireWood/WoodLogs/Models/LowEndPC/SM_AFS_Log16_LowEndPC.fbx using Guid(f715686d28971e545a646365bf31322e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd4a620eb8dd45b02c193169f2b1aee') in 0.019910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=10054 error=현재 연결은 원격 호스트에 의해 강제로 끊겼습니다.

@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ball
+  - Socket
+  - Hammer
+  - Fish
+  - Match
+  - NEMO
+  - Fire
+  - Axe
+  - Log
   layers:
   - Default
   - TransparentFX
