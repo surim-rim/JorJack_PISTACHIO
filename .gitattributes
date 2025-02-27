@@ -8,3 +8,5 @@ VR/Assets/Oculus/LipSync/Plugins/MacOSX/OVRLipSync.bundle filter=lfs diff=lfs me
 VR/Assets/Oculus/LipSync/Plugins/iOS/libOVRLipSync.dylib filter=lfs diff=lfs merge=lfs -text
 VR/Assets/we/02.Map/Snowmap/NatureManufacture[[:space:]]Assets/Dynamic[[:space:]]Nature[[:space:]]-[[:space:]]Mountain[[:space:]]Tree[[:space:]]Pack/Models/Textures/T_Fir_leaves_BC_T.TGA filter=lfs diff=lfs merge=lfs -text
 VR/Assets/we/02.Map/Snowmap/NatureManufacture[[:space:]]Assets/Dynamic[[:space:]]Nature[[:space:]]-[[:space:]]Mountain[[:space:]]Tree[[:space:]]Pack/Models/Textures/T_Fir_leaves_MT_AO_G.tga filter=lfs diff=lfs merge=lfs -text
+VR/Assets/we/02.Map/Tutorial_map/Firebase/Plugins/x86_64/FirebaseCppApp-12_5_0.bundle filter=lfs diff=lfs merge=lfs -text
+VR/Assets/we/02.Map/Tutorial_map/Firebase/Plugins/x86_64/FirebaseCppApp-12_5_0.so filter=lfs diff=lfs merge=lfs -text

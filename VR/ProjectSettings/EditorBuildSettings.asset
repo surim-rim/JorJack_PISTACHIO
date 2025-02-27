@@ -6,8 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/we/02.Map/Tutorial_map/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/we/02.Map/Snowmap_1.unity
+    guid: e718ec3a2dbc1c642b95ee181693d99a
+  - enabled: 1
+    path: Assets/we/02.Map/Tutorial_map/Scenes/Space.unity
+    guid: 876dffa5ee4d48242abf94f96a0c69a0
+  - enabled: 1
+    path: Assets/we/02.Map/Tutorial_map/Scenes/Ocean.unity
+    guid: ba4b252eaea4646478439b60659a3e2d
+  - enabled: 1
+    path: Assets/we/02.Map/Tutorial_map/Scenes/Mountain.unity
+    guid: 7bdc4611b54a3bf48a1723b5dea77e17
+  - enabled: 1
+    path: Assets/we/02.Map/Tutorial_map/Scenes/Data.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 31570f72ede25624c9677d3913f127ba,
       type: 2}
