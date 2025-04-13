@@ -13,6 +13,7 @@ TagManager:
   - Fire
   - Axe
   - Log
+  - Drill
   layers:
   - Default
   - TransparentFX

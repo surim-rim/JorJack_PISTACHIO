@@ -11,9 +11,13 @@ public class FishingGame : MonoBehaviour
     public float pullSpeed = 20f;    // 낚싯줄 당기는 속도
     public XRNode controllerNode = XRNode.RightHand; // 오른손 컨트롤러 기본값
 
+    public AudioSource audioSource;
+    public AudioClip fishCaughtSound;
+    public AudioClip lineExtendSound;
     private bool isThrown = false;   // 낚싯바늘이 던져졌는지 여부
     private bool fishCaught = false; // 물고기 잡힘 여부
     private bool fishAtRodTip = false; // 물고기가 낚싯대 끝에 도달했는지 여부
+    private bool hasPlayedLineExtendSound = false;
     private GameObject spawnedFish; // 생성된 물고기
     private Rigidbody hookRigidbody;
     private Vector3 previousControllerPosition;
@@ -51,6 +55,7 @@ public class FishingGame : MonoBehaviour
         if (isThrown) return;
 
         isThrown = true;
+        hasPlayedLineExtendSound = false;
         hookRigidbody.isKinematic = false;
         hookRigidbody.useGravity = true;
 
@@ -79,10 +84,29 @@ public class FishingGame : MonoBehaviour
             fishRigidbody.isKinematic = true;
             fishRigidbody.useGravity = false;
         }
-
+        if (audioSource != null && fishCaughtSound != null)
+        {
+            audioSource.PlayOneShot(fishCaughtSound);
+        }
+        TriggerControllerVibration();
         Debug.Log($"물고기가 잡혔습니다: {spawnedFish.name}");
+        ResetFishing();
+        fishAtRodTip = false;
     }
 
+    void TriggerControllerVibration()
+    {
+        InputDevice device = InputDevices.GetDeviceAtXRNode(controllerNode);
+        if (device.isValid)
+        {
+            device.SendHapticImpulse(0, 0.5f, 1f); // (채널, 강도, 지속 시간)
+            Debug.Log("컨트롤러 진동 시작");
+        }
+        else
+        {
+            Debug.LogWarning("컨트롤러가 유효하지 않음. 진동을 보내지 못했습니다.");
+        }
+    }
     void CheckControllerUpwardMotion()
     {
         InputDevice device = InputDevices.GetDeviceAtXRNode(controllerNode);
@@ -96,7 +120,7 @@ public class FishingGame : MonoBehaviour
         {
             Vector3 velocity = (currentPosition - previousControllerPosition) / Mathf.Max(Time.deltaTime, 0.01f);
 
-            if (velocity.y > 1.0f)
+            if (velocity.y > 1.0f && fishCaught && !fishAtRodTip)
             {
                 PullFishAndShortenLine();
             }
@@ -162,8 +186,15 @@ public class FishingGame : MonoBehaviour
         {
             Vector3 direction = (fishingHook.position - fishingRodTip.position).normalized;
             fishingHook.position = fishingRodTip.position + direction * 10f;
-
-            Debug.LogWarning("낚싯줄이 최대 길이를 초과하여 제한되었습니다.");
+            if (!hasPlayedLineExtendSound && audioSource != null && lineExtendSound != null)
+            {
+                audioSource.PlayOneShot(lineExtendSound);
+                hasPlayedLineExtendSound = true; // 한 번만 소리 나게 설정
+            }
+        }
+        else
+        {
+            hasPlayedLineExtendSound = false; // 다시 줄어들면 소리 재생 가능하도록 초기화
         }
     }
 
@@ -190,7 +221,7 @@ public class FishingGame : MonoBehaviour
         isThrown = false;
         fishCaught = false;
         fishAtRodTip = false;
-
+        hasPlayedLineExtendSound = false;
         hookRigidbody.isKinematic = true;
         hookRigidbody.useGravity = false;
 

@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/we/02.Map/Tutorial_map/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/we/02.Map/Snowmap_1.unity
+    path: Assets/we/02.Map/Snowmap.unity
     guid: e718ec3a2dbc1c642b95ee181693d99a
   - enabled: 1
     path: Assets/we/02.Map/Tutorial_map/Scenes/Space.unity

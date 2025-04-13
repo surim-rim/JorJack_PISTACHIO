@@ -18,8 +18,8 @@ public class TreeInteraction : MonoBehaviour
             // 장작 생성
             Instantiate(logPrefab, spawnPoint.position, spawnPoint.rotation);
 
-            // 나무 오브젝트 제거 (선택 사항)
-            Destroy(gameObject, 0.5f); // 0.5초 후 나무 제거
+            // 나무는 그대로 유지
+            Debug.Log("장작 생성됨, 나무는 유지됨");
         }
     }
 }
