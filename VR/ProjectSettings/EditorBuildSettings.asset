@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/we/02.Map/Tutorial_map/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/we/02.Map/Snowmap.unity
     guid: e718ec3a2dbc1c642b95ee181693d99a
   - enabled: 1
@@ -23,6 +23,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/we/02.Map/Tutorial_map/Scenes/Data.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/we/02.Map/AI_Mapping/Scenes/JejuScene.unity
+    guid: b7b484fe9f7f1634f9d4b0d0f3473303
+  - enabled: 1
+    path: Assets/we/02.Map/AI_Mapping/Scenes/MainScene.unity
+    guid: 3d703407dbfe5844fabdd5d12a1b4e1a
+  - enabled: 1
+    path: Assets/we/02.Map/AI_Mapping/Scenes/SwissScene.unity
+    guid: 196eb36fcbed7f64e845d5255b4b66b5
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 31570f72ede25624c9677d3913f127ba,
       type: 2}

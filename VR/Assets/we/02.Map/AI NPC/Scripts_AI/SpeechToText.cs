@@ -11,21 +11,24 @@ public class SpeechToText : MonoBehaviour
 
     private AudioClip recordedClip;
     private bool isRecording = false;
-    private EmotionAnalyzer emotionAnalyzer; // 감정 분석기 추가
+    private EmotionAnalyzer emotionAnalyzer;
+
+    private TextProcessor textProcessor; // 상태 메시지 출력을 위한 참조 추가
 
     void Awake()
     {
-        // 🔹 API 키 불러오기
         subscriptionKey = PlayerPrefs.GetString("Azure_STT_Key", "GJnk1Mi7ne6919pItamlznVq5U9vZQt7HYQ7To2SLTOIGGigmVm8JQQJ99AKACNns7RXJ3w3AAAYACOGU3xo").Trim();
-        emotionAnalyzer = gameObject.AddComponent<EmotionAnalyzer>(); // 감정 분석 추가
+        emotionAnalyzer = gameObject.AddComponent<EmotionAnalyzer>();
+
+        textProcessor = FindObjectOfType<TextProcessor>(); // TextProcessor 연결
 
         if (string.IsNullOrEmpty(subscriptionKey))
         {
-            Debug.LogError("❌ Azure STT API 키가 설정되지 않았습니다. PlayerPrefs를 확인하세요.");
+            Debug.LogError("Azure STT API 키가 설정되지 않았습니다. PlayerPrefs를 확인하세요.");
         }
         else
         {
-            Debug.Log("✅ Azure STT API 키가 정상적으로 불러와졌습니다!");
+            Debug.Log("Azure STT API 키가 정상적으로 불러와졌습니다!");
         }
     }
 
@@ -34,8 +37,11 @@ public class SpeechToText : MonoBehaviour
         if (isRecording) return;
 
         isRecording = true;
-        Debug.Log("🎤 사용자가 말을 시작할 때까지 기다리는 중...");
 
+        // 사용자 입력 대기 상태 출력
+        textProcessor?.ShowListeningStatus();
+
+        Debug.Log("사용자가 말을 시작할 때까지 기다리는 중...");
         StartCoroutine(WaitForSpeechAndRecord(onResult));
     }
 
@@ -48,12 +54,12 @@ public class SpeechToText : MonoBehaviour
         recordedClip = Microphone.Start(null, false, 10, 16000);
         if (!Microphone.IsRecording(null))
         {
-            Debug.LogError("❌ 마이크 녹음이 시작되지 않았습니다.");
-            onResult?.Invoke("음성을 인식할 수 없습니다.", "neutral");
+            Debug.LogError("마이크 녹음이 시작되지 않았습니다.");
+            OnSTTFail(onResult);
             yield break;
         }
 
-        Debug.Log("🎤 마이크 녹음 시작됨");
+        Debug.Log("마이크 녹음 시작됨");
 
         while (waitTime < maxWaitTime)
         {
@@ -63,7 +69,7 @@ public class SpeechToText : MonoBehaviour
 
             if (currentVolume > silenceThreshold)
             {
-                Debug.Log("🎤 사용자가 말을 시작했습니다! 녹음 유지...");
+                Debug.Log("사용자가 말을 시작했습니다! 녹음 유지...");
                 break;
             }
 
@@ -73,7 +79,7 @@ public class SpeechToText : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
-        Debug.Log("🛑 자동 녹음 종료 조건 감지 중...");
+        Debug.Log("자동 녹음 종료 조건 감지 중...");
         StartCoroutine(CheckForSilenceAndStop(onResult));
     }
 
@@ -95,7 +101,7 @@ public class SpeechToText : MonoBehaviour
                 silenceDuration += Time.deltaTime;
                 if (silenceDuration > 1.5f && elapsedTime > minRecordTime)
                 {
-                    Debug.Log("🛑 사용자가 말을 멈췄습니다. 녹음 종료.");
+                    Debug.Log("사용자가 말을 멈췄습니다. 녹음 종료.");
                     break;
                 }
             }
@@ -113,19 +119,19 @@ public class SpeechToText : MonoBehaviour
 
         if (recordedClip == null || recordedClip.samples == 0)
         {
-            Debug.LogError("❌ 녹음된 AudioClip이 비어 있습니다. STT 요청을 보내지 않습니다.");
-            onResult?.Invoke("음성을 인식할 수 없습니다.", "neutral");
+            Debug.LogError("녹음된 AudioClip이 비어 있습니다. STT 요청을 보내지 않습니다.");
+            OnSTTFail(onResult);
             yield break;
         }
 
-        Debug.Log($"🎤 녹음된 AudioClip 샘플 수: {recordedClip.samples}");
+        Debug.Log($"녹음된 AudioClip 샘플 수: {recordedClip.samples}");
 
         byte[] audioData = WavUtility.FromAudioClip(recordedClip);
 
         if (audioData == null || audioData.Length == 0)
         {
-            Debug.LogError("❌ 변환된 오디오 데이터가 비어 있습니다.");
-            onResult?.Invoke("음성을 인식할 수 없습니다.", "neutral");
+            Debug.LogError("변환된 오디오 데이터가 비어 있습니다.");
+            OnSTTFail(onResult);
             yield break;
         }
 
@@ -141,27 +147,35 @@ public class SpeechToText : MonoBehaviour
             request.SetRequestHeader("Content-Type", "audio/wav");
             request.SetRequestHeader("Accept", "application/json");
 
-            Debug.Log("📡 STT API 요청 전송...");
+            Debug.Log("STT API 요청 전송...");
             yield return request.SendWebRequest();
 
             if (request.result == UnityWebRequest.Result.Success)
             {
-                Debug.Log("✅ STT API 호출 성공");
+                Debug.Log("STT API 호출 성공");
                 string recognizedText = ParseJsonResponse(request.downloadHandler.text);
-                Debug.Log($"📝 STT 결과: {recognizedText}");
+                Debug.Log($"STT 결과: {recognizedText}");
 
                 string detectedEmotion = emotionAnalyzer.DetectEmotion(recognizedText);
-                Debug.Log($"🧠 감정 분석 결과: {detectedEmotion}");
+                Debug.Log($"감정 분석 결과: {detectedEmotion}");
 
                 onResult?.Invoke(recognizedText, detectedEmotion);
             }
             else
             {
-                Debug.LogError($"❌ STT API 요청 실패: {request.error}");
-                Debug.LogError($"🛑 STT API 응답: {request.downloadHandler.text}");
-                onResult?.Invoke("음성을 인식할 수 없습니다.", "neutral");
+                Debug.LogError($"STT API 요청 실패: {request.error}");
+                Debug.LogError($"STT API 응답: {request.downloadHandler.text}");
+                OnSTTFail(onResult);
             }
         }
+    }
+
+    private void OnSTTFail(System.Action<string, string> onResult)
+    {
+        // STT 실패 시 상태 메시지 표시
+        textProcessor?.ShowSpeechRecognitionFail();
+
+        onResult?.Invoke("음성을 인식할 수 없습니다.", "neutral");
     }
 
     private string ParseJsonResponse(string json)
@@ -173,7 +187,7 @@ public class SpeechToText : MonoBehaviour
         }
         catch (Exception ex)
         {
-            Debug.LogError($"⚠️ JSON 파싱 오류: {ex.Message}");
+            Debug.LogError($"JSON 파싱 오류: {ex.Message}");
             return "음성을 인식할 수 없습니다.";
         }
     }
